@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.2.0" />
+    <PackageReference Include="EPPlus" Version="7.5.1" />
+    <PackageReference Include="MailKit" Version="4.8.0" />
+    <PackageReference Include="Microsoft.PowerShell.Commands.Diagnostics" Version="7.4.6" />
+    <PackageReference Include="Microsoft.PowerShell.Commands.Management" Version="7.4.6" />
+    <PackageReference Include="Microsoft.PowerShell.Commands.Utility" Version="7.4.6" />
+    <PackageReference Include="Microsoft.PowerShell.ConsoleHost" Version="7.4.6" />
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.3.0" />
+    <PackageReference Include="Microsoft.WSMan.Management" Version="7.4.6" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.0" />
+    <PackageReference Include="System.Management.Automation" Version="7.4.6" />
+    <PackageReference Include="System.Net.Mail.Abstractions" Version="1.1.21" />
+    <PackageReference Include="System.Security.Permissions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Administration">
+      <HintPath>..\..\..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+	    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.PowerShell.SDK" Version="7.3.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="D:\InvestorSystem\api-investor\InvesterSystem.DataModel\InvestorSystem.DataModel.csproj" />
+	  <ProjectReference Include="D:\InvestorSystem\api-investor\InvestorSystem.Core\InvestorSystem.Core.csproj" />
+	  <ProjectReference Include="D:\InvestorSystem\api-investor\InvestorSystem.Infrastructure\InvestorSystem.Infrastructure.csproj" />
+	  <ProjectReference Include="D:\InvestorSystem\api-investor\InvestorSystem\InvestorSystem.csproj" />
+	</ItemGroup>
+</Project>
